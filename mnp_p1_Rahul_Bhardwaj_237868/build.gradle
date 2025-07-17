@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.myauto'
+version = '1.0-SNAPSHOT'
+
+sourceCompatibility = '17'
+targetCompatibility = '17'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    def akkaVersion = '2.8.5'
+
+    implementation "com.typesafe.akka:akka-actor-typed_2.13:$akkaVersion"
+    implementation "com.typesafe.akka:akka-slf4j_2.13:$akkaVersion"
+    implementation "ch.qos.logback:logback-classic:1.2.3"
+}
